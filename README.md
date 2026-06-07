@@ -51,10 +51,11 @@ A sleek, lightweight, and highly customizable Meta Currency Manager for Foundry 
 
 ## Main Links
 
-- **Main Hub:** https://ctrlaltdefeat.carrd.co/
+## Main Links
+- **Main Hub:** https://ctrlaltdefeatam.github.io/
 - **Patreon:** https://www.patreon.com/Ctrl_Alt_Defeat
+- **Discord:** https://discord.gg/fBf7xw2bmB
 - **StartPlaying:** https://startplaying.games/gm/ctrl-alt-defeat
 - **YouTube:** https://www.youtube.com/@Ctrl_Alt_Defeat-GM
 - **Homebrewery:** https://homebrewery.naturalcrit.com/share/LtF88dEE8z1S
-- **GitHub:** https://ctrlaltdefeatam.github.io/
-- **Discord:** https://discord.gg/fBf7xw2bmB
+- **GitHub:** https://ctrlaltdefeat.carrd.co/
