@@ -1,7 +1,16 @@
 Prestige & Inspiration UI
 Created by CtrlAltDefeat
+Release Version: 0.0.84
 
 A sleek, lightweight, and highly customizable Meta Currency Manager for Foundry VTT. Originally designed to support standard D&D 5e Inspiration alongside specialized homebrew mechanics like Pirate Prestige and Crew Reputation (perfect for One Piece D&D campaigns), this module provides a unified, synced interface for your entire table.
+
+Target: Foundry VTT v14.364+ (v14 stable) with D&D 5e 5.3.3.
+
+## Changelog 0.0.84
+- Added production minification.
+- Obfuscated footer destination data to discourage simple source removal.
+- Preserved all 0.0.83 functionality and diagnostics.
+- Removed plaintext community and support URLs from public documentation.
 
 ✨ Key Features
 🎲 Meta-Currency Tracking
@@ -21,17 +30,15 @@ Instant Combat Reference: Players and GMs can generate a "Tactical HUD" chat car
 
 Smart Whispering: When players click the HUD button, it whispers privately to them to prevent chat bloat. When the GM clicks it, it broadcasts publicly to the table.
 
-🔊 Flawless Audio Sync (Chat-Socket Bypass)
-Zero Permission Errors: Bypasses standard Foundry player audio restrictions by embedding sound data directly into chat packets.
+🔊 Table-Wide Audio (Foundry v14 AudioHelper)
+Primary playback uses Foundry's AudioHelper socket broadcast so the initiating client and every connected client hear each SFX exactly once.
 
-Table-Wide Sync: When a player uses a point, the sound plays exactly once, perfectly synchronized for every connected client at the table.
-
-Custom SFX: GMs can assign unique .ogg or .wav files for adding and removing points via the built-in Foundry FilePicker.
+Custom SFX: GMs can assign unique .ogg or .wav files via the built-in Foundry FilePicker. Volume 0 is intentional silence.
 
 ⚙️ GM Settings & Quality of Life
-Persistent Data: All settings, maximum caps, and custom sounds are saved to Foundry's core game.settings database, making them 100% immune to accidental macro flag wipes.
+Persistent Data: All settings, maximum caps, and custom sounds are saved to Foundry's core game.settings database.
 
-Global Hotkey: Press Ctrl+1 at any time to instantly toggle the UI open or closed.
+Global Hotkey: Press Alt+Q at any time to instantly toggle the UI open or closed.
 
 Auto-Boot: The UI automatically pops up for all players and the GM the moment they log into the session.
 
@@ -40,25 +47,24 @@ Customization: Every player can adjust their own UI scale and select a custom he
 🚀 Usage
 Launch: The UI will automatically appear when you load into the world.
 
-Toggle: Press Ctrl+1 to open or minimize the window.
+Toggle: Press Alt+Q to open or minimize the window.
 
-GM Settings: Click the Gear/Cog icon in the bottom right of the UI to set Max Inspiration, Max Prestige, Max Island Reputation, master volume, and custom sound effects.
+GM Settings: Click the Gear/Cog icon in the bottom right of the UI to set caps, volume, and custom sound effects.
 
-Sheet Access: Click any character portrait in the UI to instantly pull up their Foundry character sheet.
+Sheet Access: Click any character portrait in the UI to open their character sheet. Actor sheets also include a gem shortcut.
 
-🤝 Support & Community
-If you enjoy this module and want to support the creation of more Foundry VTT tools, macros, and content:
+Community and creator-support links are available from the module footer.
 
 ---
 
 ## Install via Manifest (recommended)
 
-1. Foundry → **Add-on Modules** → **Install Module**
-2. Paste this **Manifest URL**:
+1. Foundry → Add-on Modules → Install Module
+2. Paste this Manifest URL:
    ```
-   https://github.com/CtrlAltDefeatAM/Prestige-Inspiration-UI-CtrlAltDefeat/releases/latest/download/module.json
+   https://github.com/CtrlAltDefeatAM/Prestige-Inspiration-Wanted-UI-CtrlAltDefeat/releases/latest/download/module.json
    ```
-3. Install → enable **Prestige & Inspiration CtrlAltDefeat** in **Settings → Manage Modules**
+3. Install → enable Prestige Inspiration Wanted Tracker UI | CtrlAltDefeat in Settings → Manage Modules
 
 ## Manual Install
 
@@ -72,10 +78,5 @@ If you enjoy this module and want to support the creation of more Foundry VTT to
 ## Use
 
 - The UI auto-launches on world load.
-- Press **Ctrl+1** to toggle the UI.
-- The compendium includes a macro: **Prestige & Inspiration CtrlAltDefeat**.
-
-## Links
-
-- Patreon: https://www.patreon.com/Ctrl_Alt_Defeat
-- Discord: https://discord.gg/fBf7xw2bmB
+- Press Alt+Q to toggle the UI.
+- The compendium includes a macro: Prestige & Inspiration CtrlAltDefeat.
